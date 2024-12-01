@@ -18,65 +18,65 @@ public class MainClass {
         
         switch (Metode) {
             case 1 -> {
-                PembayaranBelanja pbe = new PembayaranBelanja();
+                PembayaranBelanja ewallet = new PembayaranBelanja();
                 System.out.println("Masukkan PIN E-Wallet anda");
-                pbe.pin =input.nextInt();
+                ewallet.pin =input.nextInt();
                 System.out.println("Nominal Pembayaran");
-                pbe.BayarEwallet = input.nextInt();
+                ewallet.BayarEwallet = input.nextInt();
                 System.out.println("""
                                                    Pembayaran E-Wallet Berhasil
                                                    Total Transaksi
-                                                   Rp"""+pbe.BayarEwallet);
+                                                   Rp"""+ewallet.BayarEwallet);
             }
             case 2 -> {
-                PembayaranBelanja pbc = new PembayaranBelanja();
+                PembayaranBelanja credit = new PembayaranBelanja();
                 System.out.println("Masukkan Credit PIN anda");
-                pbc.pin=input.nextInt();
+                credit.pin=input.nextInt();
                 System.out.println("Nominal Pembayaran");
-                pbc.BayarCreditCard= input.nextInt();
+                credit.BayarCreditCard= input.nextInt();
                 System.out.println("""
                                                    Pembayaran Melalui Credit Card Berhasil
                                                    Total Transaksi
-                                                   Rp"""+pbc.BayarCreditCard);
+                                                   Rp"""+credit.BayarCreditCard);
             }
             case 3 -> {
-                PembayaranBelanja pbq = new PembayaranBelanja();
+                PembayaranBelanja debit = new PembayaranBelanja();
                 System.out.println("Masukkan PIN QRIS anda");
-                pbq.pin=input.nextInt();
+                debit.pin=input.nextInt();
                 System.out.println("Nominal Pembayaran");
-                pbq.BayarQRIS= input.nextInt();
+                debit.BayarQRIS= input.nextInt();
                 System.out.println("""
                                                    Pembayaran melalui QRIS Berhasil
                                                    Total Transaksi
-                                                   Rp"""+pbq.BayarQRIS);
+                                                   Rp"""+debit.BayarQRIS);
             }
             case 4 -> {
-                PembayaranBelanja pbs = new PembayaranBelanja();
+                PembayaranBelanja shopee = new PembayaranBelanja();
                 System.out.println("Masukkan PIN Shopee anda");
-                pbs.pin=input.nextInt();
+                shopee.pin=input.nextInt();
                 System.out.println("Nominal Pembayaran");
-                pbs.BayarShopee= input.nextInt();
+                shopee.BayarShopee= input.nextInt();
                 System.out.println("""
                                                    Pembayaran melalui Shopee Berhasil
                                                    Total Transaksi
-                                                   Rp"""+pbs.BayarShopee);
+                                                   Rp"""+shopee.BayarShopee);
             }
             case 5 -> {
-                PembayaranBelanja pbg = new PembayaranBelanja();
+                PembayaranBelanja gopay = new PembayaranBelanja();
                 System.out.println("Masukkan PIN anda");
-                pbg.pin=input.nextInt();
+                gopay.pin=input.nextInt();
                 System.out.println("Nominal Pembayaran");
-                pbg.BayarGopay= input.nextInt();
+                gopay.BayarGopay= input.nextInt();
                 System.out.println("""
                                                    Pembayaran melalui Shopee Berhasil
                                                    Total Transaksi
-                                                   Rp"""+pbg.BayarGopay);
+                                                   Rp"""+gopay.BayarGopay);
             }
             case 6 -> {
-                PembayaranBelanja pbcs = new PembayaranBelanja();
+                PembayaranBelanja cash = new PembayaranBelanja();
                 System.out.println("Nominal Pembayaran");
-                pbcs.BayarCash = input.nextInt();
-                System.out.println("Kembalian" + pbcs.kembalian);
+                cash.BayarCash = input.nextInt();
+                System.out.println("Kembalian" + cash.kembalian);
             }
             default -> {
             }
